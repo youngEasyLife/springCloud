@@ -9,6 +9,7 @@ eureka:
   instance:
     hostname: localhost
   client:
+#    false为服务端 true或不加为客户端
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
