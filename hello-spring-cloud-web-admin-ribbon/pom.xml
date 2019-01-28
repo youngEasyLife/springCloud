@@ -56,6 +56,7 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
         </dependency>
+
         <!--Hystrix 仪表盘功能，两个项目的改造方式相同 即熔断监视器-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
