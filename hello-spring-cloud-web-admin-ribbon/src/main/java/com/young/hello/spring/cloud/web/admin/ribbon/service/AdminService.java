@@ -24,7 +24,18 @@ public class AdminService {
         return restTemplate.getForObject("http://HELLO-SPRING-CLOUD-SERVICE-ADMIN/hi?message=" + message, String.class);
     }
 
+
+    @HystrixCommand(fallbackMethod = "goodError")
+    public String goodMorning(String message) {
+        return restTemplate.getForObject("http://HELLO-SPRING-CLOUD-SERVICE-ADMIN/goodMorning?message=" + message, String.class);
+    }
+
+
     public String hiError(String message) {
         return String.format("your message is %s ,but request error", message);
+    }
+
+    public String goodError(String message) {
+        return String.format("your message is %s ,but request error ,and goodMorning", message);
     }
 }

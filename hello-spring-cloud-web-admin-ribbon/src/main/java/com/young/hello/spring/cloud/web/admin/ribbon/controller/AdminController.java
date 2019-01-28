@@ -22,4 +22,10 @@ public class AdminController {
     public String sayHi(@RequestParam String message) {
         return adminService.sayHi(message);
     }
+
+
+    @GetMapping(value = "goodMorning")
+    public String goodMorning(@RequestParam String message) {
+        return adminService.goodMorning(message);
+    }
 }

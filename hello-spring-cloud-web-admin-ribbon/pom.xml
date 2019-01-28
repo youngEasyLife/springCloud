@@ -56,6 +56,11 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
         </dependency>
+        <!--Hystrix 仪表盘功能，两个项目的改造方式相同 即熔断监视器-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
+        </dependency>
         <!-- Spring Cloud End -->
 
         <!-- 解决 thymeleaf 模板引擎一定要执行严格的 html5 格式校验问题 -->
