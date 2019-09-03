@@ -18,7 +18,7 @@ public class AdminController {
 
 
     @GetMapping("/hi")
-    public String Hi(String message) {
+    public String hi(String message) {
         return String.format("your message is %s ,port is %s", message, port);
     }
 
